@@ -207,8 +207,8 @@ set -o noclobber
 # 2.2) Listing, directories, and motion
 
 # 2.3) Text and editor commands
-export EDITOR='emacs -nw'
-export VISUAL='emacs -nw' 
+export EDITOR='/usr/bin/vim'
+export VISUAL='/usr/bin/vim' 
 
 # 2.4) grep options
 export GREP_OPTIONS='--color=auto'
