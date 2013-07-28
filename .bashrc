@@ -239,6 +239,7 @@ fi
 ## -- 3) User-customized code  --
 ## ------------------------------
 ## Functions
+
 # Better cd command from O'reilly Bash Cookbook
 # Allow use of 'cd ...' to cd up 2 levels, 'cd ....' up 3, etc. (like 4NT/4DOS)
 # Usage: cd ..., etc.
@@ -276,6 +277,7 @@ function cd {
     builtin cd $option
   fi
 } # end of cd
+
 # mkdir newdir then cd into it from O'reilly Bash Cookbook
 # usage: mkcd (<mode>) <dir>
 function mkcd {                  
@@ -294,7 +296,7 @@ function mkcd {
 } # end of mkcd
 
 # Compress the cd, ls series of commands 
-function cs () {
+function cl () {
   clear
   # only change directory if a directory is specified
   [ -n "${1}" ] && cd $1
@@ -319,7 +321,7 @@ function cs () {
   else
     ls -hlAF --full-time
   fi
-} # end of cs
+} # end of cl
 
 function flip(){ 
   coin=`</dev/urandom tr -dc 0-1|fold -w 1| head -n 1`
